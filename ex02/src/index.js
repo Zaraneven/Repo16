@@ -1,22 +1,21 @@
 
 class Book {
     constructor(title) {
-        this._title = "The Little Prince";
+        this._title = title;
     }
     
-     get title(){
+    get title(){
         return this._title;
     }
 
-    set book(newTitle) {
-        this.title = newTitle;
-        
+    set title(newTitle) {
+        this._title = newTitle;
     }
    
 }
 
-const littlePrince = new Book("Le Petit Prince");
-console.log(littlePrince._title);
-littlePrince._title = "Le Petit Prince";
-console.log(littlePrince._title);
+const littlePrince = new Book("The Little Prince");
+console.log(littlePrince.title);
+littlePrince.title = "Le Petit Prince";
+console.log(littlePrince.title);
 module.exports = Book;
