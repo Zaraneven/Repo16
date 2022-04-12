@@ -19,3 +19,4 @@ const littlePrince = new Book("Le Petit Prince");
 console.log(littlePrince._title);
 littlePrince._title = "Le Petit Prince";
 console.log(littlePrince._title);
+module.exports = Book;
